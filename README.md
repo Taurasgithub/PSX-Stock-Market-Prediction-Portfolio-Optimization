@@ -7,7 +7,7 @@ Classical portfolio optimization techniques often use historical prices and retu
 Additionally, with the exponential increase in volumes of data, stock market analysts and particpants currently rely on non-AI methods (such as technical and fundamental analysis) for stock selection which are often arbitrary due to their limited ability to analyze raw data.
 
 ## Data 
-10 year daily stock data (Open, Close, High, Low) from May 2016 to April 2026 for stocks listed on the Pakistan Stock Exchange (PSX). 
+10 year monthly stock data (Open, Close, High, Low) from May 2016 to April 2026 for stocks listed on the Pakistan Stock Exchange (PSX). 
 
 ## Methodology
 1. **_Data Cleaning and Preprocessing_** 
