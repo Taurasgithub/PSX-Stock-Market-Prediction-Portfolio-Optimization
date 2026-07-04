@@ -26,10 +26,10 @@ Additionally, with the exponential increase in volumes of data, stock market ana
 The multivariate LSTM outperforms the univariate LSTM in returns prediction as evidenced by lower root mean squared error per predicted stock as well as by simply looking at the return prediction visualizations.
 
 ![SCOM univariate predictions](https://github.com/Vicci13/Stock-Market-Prediction-Portfolio-Optimization/assets/108093560/f486e5d0-c42e-42f1-9e22-aa1ba4b87b0f)
-_Fig. 1: Univariate LSTM Return Predictions for Safaricom Data_
+_Fig. 1: Univariate LSTM Return Predictions for Fatima Fertilizer Company Stock Price Data_
 
 ![SCOM multivariate predictions](https://github.com/Vicci13/Stock-Market-Prediction-Portfolio-Optimization/assets/108093560/7370ba12-e529-47cd-adb7-1ed0e2a4e474)
-_Fig. 2: Multivariate LSTM Return Predictions for Safaricom Data_
+_Fig. 2: Multivariate LSTM Return Predictions for Fatima Fertilizer Company Stock Price Data_
 
 The univariate LSTM model can be better used in classification and trend forecasting whereas the multifeature LSTM is more superior in actual value prediction. 
 
