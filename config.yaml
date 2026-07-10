@@ -1,0 +1,45 @@
+# Centralized project configuration.
+#
+# `random_seed` is the single source of truth for reproducibility.
+# It is loaded by src/seed_utils.py and applied consistently across
+# NumPy, Python's built-in `random` module, TensorFlow/Keras, and
+# every scikit-learn estimator that accepts a `random_state` argument.
+random_seed: 42
+
+# Feature engineering pipeline toggles (src/feature_engineering.py).
+# `enabled: false` skips feature generation entirely and returns the
+# input OHLCV data unchanged. Each indicator group and lag features can
+# also be toggled independently for future ablation experiments.
+feature_engineering:
+  enabled: true
+
+  indicators:
+    sma: true
+    ema: true
+    rsi: true
+    macd: true
+    stochastic_oscillator: true
+    atr: true
+    bollinger_bands: true
+    obv: true
+    vwap: true
+
+  params:
+    sma_windows: [10, 20, 50]
+    ema_windows: [10, 20, 50]
+    rsi_length: 14
+    macd_fast: 12
+    macd_slow: 26
+    macd_signal: 9
+    stochastic_k_period: 14
+    stochastic_d_period: 3
+    atr_length: 14
+    bollinger_length: 20
+    bollinger_num_std: 2
+    vwap_window: 14
+
+  lag_features:
+    enabled: true
+    columns: ["Open", "High", "Low", "Close", "Volume"]
+    lags: [1, 2, 3, 5, 10]
+
